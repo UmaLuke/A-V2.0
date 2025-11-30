@@ -1,8 +1,8 @@
   import React from 'react';
-  import Header from './components/Header';
-  import Nav from './components/Nav';
-  import Main from './components/Main';
-  import Footer from './components/Footer';
+  import Header from './Componentes/Header';
+  import Nav from './Componentes/Nav';
+  import Main from './Componentes/Main';
+  import Footer from './Componentes/Footer';
 
   function App() {
     return (
