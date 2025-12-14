@@ -10,8 +10,8 @@
       <div className="App">
         <Header />
         <Nav />
-        <Hero />
         <Main />
+        <Hero />
         <Footer />
       </div>
     );
