@@ -1,16 +1,37 @@
-  import React from 'react'
+import React from 'react'
+import { Link } from 'react-router-dom'
 
-  const Nav = () => {
-    return (
-      <nav className="bg-gray-800 text-white p-4">
-        <ul className="container mx-auto flex space-x-4">
-          <li><a href="#home" className="hover:text-blue-400">Inicio</a></li>
-          <li><a href="#menu" className="hover:text-blue-400">Menú</a></li>
-          <li><a href="#contact" className="hover:text-blue-400">Contacto</a></li>
-        </ul>
-      </nav>
-    )
-  }
+const Nav = () => {
+  return (
+    // h-screen: altura completa
+    // w-64: ancho fijo
+    // flex-col: elementos uno debajo del otro
+    <nav className="bg-gray-800 text-white w-64 min-h-screen p-6 flex flex-col">
+      
+      {/* Puedes poner el logo aquí si quieres que esté en la barra */}
+      <div className="mb-8 text-2xl font-bold text-blue-400">
+        Antony's Bar
+      </div>
 
-  export default Nav
-  
+      <ul className="flex flex-col space-y-4">
+        <li>
+          <Link to="/" className="block p-2 hover:bg-gray-700 rounded">
+            🏠 Inicio
+          </Link>
+        </li>
+        <li>
+          <Link to="/menu" className="block p-2 hover:bg-gray-700 rounded">
+            🍔 Menú
+          </Link>
+        </li>
+        <li>
+          <Link to="#" className="block p-2 hover:bg-gray-700 rounded">
+            📞 Contacto
+          </Link>
+        </li>
+      </ul>
+    </nav>
+  )
+}
+
+export default Nav
